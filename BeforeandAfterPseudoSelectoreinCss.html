@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Pseudo Selectors</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            font-family: cursive;
+        }
+
+        header::before {
+            content: "";
+            background: url('pic.jpg');
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+
+        .navi {
+            margin: 0px 23px;
+            display: flex;
+            font-size: 20px;
+            font-family: cursive;
+            align-items: center;
+            justify-content: center;
+
+
+
+        }
+
+        li {
+            list-style: none;
+            padding: 0px 30px;
+
+
+        }
+
+        section {
+            margin: 0px 23px;
+            color: wheat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 500px;
+            justify-content: center;
+            font-family: cursive;
+
+
+        }
+
+        select {
+            font-size: 15px;
+            font-family: cursive;
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+
+        li:hover {
+            background-color: wheat;
+            color: black;
+            border: 2px;
+            border-radius: 15px;
+            cursor: pointer;
+
+
+        }
+
+        li:active {
+            background-color: darkgrey;
+            font-size: large;
+        }
+
+        .p {
+            color: wheat;
+            width: 100%;
+            margin: 0px auto;
+            font-size: 20px;
+            font-family: cursive;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navi">
+                <li class="item1">Home</li>
+                <li class="item2">Services</li>
+                <li class="item3">About Us</li>
+                <li class="item4">Contact Us</li>
+                <select name="Login" id="item4">
+                    <option value="Login">Login</option>
+                    <option value="Sign Up">Sign Up</option>
+
+                </select>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome To Vintage Garage</h3>
+        <p>We are greatful that you have visited here and you are at the right place. We gives better services to our
+            customer .</p>
+        <p>For better experiance, if you are new user, <Strong>Sign up</Strong> first Otherwise <strong>Login</strong>
+            your account.</p>
+        <h3>Thank You</h3>
+
+        <p class="p">Apka Shubchintak !</p>
+    </section>
+
+
+</body>
+
+</html>
